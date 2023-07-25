@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
                     val user = auth.currentUser
 //                    updateUI(user)
                     if (user != null) {
-                        Toast.makeText(this, "${user.displayName}", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "${user.phoneNumber}", Toast.LENGTH_SHORT).show()
                     }
                 } else {
                     // If sign in fails, display a message to the user.
