@@ -15,6 +15,7 @@ import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.vasertoker.firebaseauth.databinding.ActivityMainBinding
+import com.vasertoker.firebaseauth.relaTimeDatabase.RealActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -83,10 +84,13 @@ class MainActivity : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(TAG, "signInWithCredential:success")
                     val user = auth.currentUser
-//                    updateUI(user)
-                    if (user != null) {
-                        Toast.makeText(this, "${user.phoneNumber}", Toast.LENGTH_SHORT).show()
-                    }
+
+                    val intent = Intent(this, RealActivity::class.java)
+
+                  startActivity(intent)
+
+//                        Toast.makeText(this, "${user?.phoneNumber}", Toast.LENGTH_SHORT).show()
+
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w(TAG, "signInWithCredential:failure", task.exception)

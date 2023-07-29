@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "415420950923",
+    "firebase_url": "https://fir-auth-f4ac6-default-rtdb.firebaseio.com",
     "project_id": "fir-auth-f4ac6",
     "storage_bucket": "fir-auth-f4ac6.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "415420950923-cbucvskdu138mi6hrigs6saedbdi0ljn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vasertoker.firebaseauth",
+            "certificate_hash": "045223a35d5a579bf79b990f34fbe4d6c293cd92"
+          }
+        },
         {
           "client_id": "415420950923-5af3qvrumkap4a7is3vbsddvgq5lprsr.apps.googleusercontent.com",
           "client_type": 3

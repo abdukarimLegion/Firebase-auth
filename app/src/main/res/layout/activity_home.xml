@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/tv_enter_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="42dp"
+        android:fontFamily="@font/sfregular"
+        android:text="Xush kelibsiz!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_text_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:fontFamily="@font/sfregular"
+        android:text="Avtorizatsiyadan o’tish uchun telefon\nraqamingizni kiriting"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_enter_sms" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="42dp"
+        android:fontFamily="@font/sfregular"
+        android:text="+998907965556"
+        android:textAlignment="textStart"
+        android:textColor="#A4A4A4"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_text_auth" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
